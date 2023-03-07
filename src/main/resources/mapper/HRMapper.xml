@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--配置数据库访问的接口，规则为包名com.xja.mapper + 接口名称HRMapper-->
+<mapper namespace="com.xja.mapper.EmployeeMapper">
+
+
+    <select id="findById" resultType="com.xja.entity.Employee">
+        SELECT id, name, gender, idCard, nationid
+        FROM employee
+        WHERE id = 3
+    </select>
+</mapper>
